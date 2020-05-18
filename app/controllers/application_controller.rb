@@ -23,7 +23,7 @@ class ApplicationController < Sinatra::Base
     @articles = Article.all
     erb :"../views/index"
   end
-  get '/articles/:id' do
+  get '/article/:id' do
     @article = Article.find(params[:id])
     puts @article
     erb :"../views/show"
