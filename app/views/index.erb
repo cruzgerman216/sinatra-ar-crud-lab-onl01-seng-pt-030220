@@ -3,6 +3,8 @@
 <!DOCTYPE html>
 <html>
   <body>
-
+    <%=@articles.map do |article|%>
+      <h1><%=@article.tile%></h1>
+      <p><%=@article.content%></p>
   </body>
 </html>
