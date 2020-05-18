@@ -21,7 +21,7 @@ class ApplicationController < Sinatra::Base
 
   get '/articles' do
     @articles = Article.all
-    erb :index
+    erb :"../views/new"
   end
   get '/articles/:id' do
     erb :"../views/show"
