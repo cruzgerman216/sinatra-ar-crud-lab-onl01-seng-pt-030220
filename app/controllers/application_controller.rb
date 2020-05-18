@@ -26,5 +26,5 @@ class ApplicationController < Sinatra::Base
   get '/articles/:id' do
     erb :"../views/show"
   end
-  
+
 end
