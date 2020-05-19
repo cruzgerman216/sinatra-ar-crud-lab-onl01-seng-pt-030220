@@ -41,7 +41,6 @@ class ApplicationController < Sinatra::Base
     new_article = {}
     new_article[:title] = params[:title]
     new_article[:content] = params[:content]
-    puts new_article
     article.update(new_article)
     redirect "/articles/#{id}"
   end
