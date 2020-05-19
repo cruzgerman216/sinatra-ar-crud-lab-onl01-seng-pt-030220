@@ -40,7 +40,7 @@ class ApplicationController < Sinatra::Base
     article = Article.find(id)
     new_article = {}
     new_article[:title] = params[:title]
-    new_artcle[:content] = params[:content]
+    new_article[:content] = params[:content]
     article.update(new_article)
     redirect "/articles/#{id}"
   end
