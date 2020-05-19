@@ -35,7 +35,7 @@ class ApplicationController < Sinatra::Base
     erb :"../views/update"
   end
 
-  patch '/articles/:id' do 
+  patch '/articles/:id' do
     article = Article.find(params[:id])
     article.update(params)
     redirect "/articles/#{id}"
